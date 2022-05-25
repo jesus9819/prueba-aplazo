@@ -17,7 +17,8 @@ const routes: Routes = [
 
   { path: 'character-details/:id',
    loadChildren: () =>
-    import('./components/pages/characters/character-details/character-details.module').then(m => m.CharacterDetailsModule) }];
+    import('./components/pages/characters/character-details/character-details.module').then(m => m.CharacterDetailsModule) },
+  { path: 'location-list', loadChildren: () => import('./components/pages/locations/locations.module').then(m => m.LocationsModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
