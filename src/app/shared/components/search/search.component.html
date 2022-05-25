@@ -1,1 +1,7 @@
-<p>search works!</p>
+<input
+ #inputSearch
+ autofocus
+ type="text" 
+ class="form-control" 
+ placeholder="Search ...."
+ (keyup)="onSearch(inputSearch.value)">
